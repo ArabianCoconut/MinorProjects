@@ -1,4 +1,4 @@
-# Chemical Calculator  Made by Maheir
+# Chemical Calculator  Made by Arabian coconut
 def normality():
     print("To prepare normality solution")
     value_1=int(input("Input Molecular Weight:"))
@@ -25,6 +25,7 @@ def solution():
     print("Add volume of",(value_2*value_3*10)//1000,"mL","In",value_3,"mL and its Percent Concentration is:",(value_2*value_3//value_3),"%")
     input("Press Enter to exit")
 
+print("Version 1.0")
 user=input("Do you want 1) Normality or 2)Solution Calculator? type 1 or 2:")
 
 if user == "1":
