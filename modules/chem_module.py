@@ -1,6 +1,6 @@
 # Chemical Calculator  Made by ArabianCoconut
 from time import sleep
-def normality():
+def normality(): # simple Normality Calculator
     print("To prepare normality solution")
     value_1=float(input("Input Molecular Weight:"))
     value_2=float(input("How many Normal you want(numerical value only):"))
@@ -18,7 +18,7 @@ def normality():
     sleep(1)
     print("going back to main menu")
     return start()   
-def solution():
+def solution(): # Simple Solution calculator
     print("To prepare volume solution")
     value_1=float(input("Input Grams of solute else press enter zero:"))
     value_2=float(input("Input volume of solute else press enter zero:"))
@@ -26,7 +26,7 @@ def solution():
     print("Dissolve :",(value_1*value_3*10)/1000,"gms","In",value_3,"mL and its Percent Concentration is:",(value_1*value_3/value_3),"%")
     print("Add volume of",(value_2*value_3*10)/1000,"mL","In",value_3,"mL and its Percent Concentration is:",(value_2*value_3/value_3),"%")
     return start()
-def converter():
+def converter():  # Converter for Grams to miligrams and vice versa
     print("Convert Grams to miligrams vice versa.")
     data=["Select the Option's:-","1) Gram to miligram","2) Miligrams to Grams","3) To go back\n"]
     for i in data:
@@ -48,7 +48,7 @@ def converter():
         print("Try Again! \n")
         return converter()
 
-def start():
+def start(): # Starts the program
     data=["Version 1.0","Choose options:-", "1) Normality calculator","2) Solution Calculator","3) Gram and miligram converter","4) Select exit or type exit\n"]
     for i in data:
         print(i)
