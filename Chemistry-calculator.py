@@ -1,3 +1,3 @@
 # Chemical Calculator  Made by ArabianCoconut
-import modules.chem_module
-print(modules.chem_module.start())
+import modules.Chem_module
+print(modules.Chem_module.start())

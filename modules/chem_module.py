@@ -66,4 +66,3 @@ def start(): # Starts the program
     else:
         print("Their is an input error.Try again!\n")
         return start()
-
