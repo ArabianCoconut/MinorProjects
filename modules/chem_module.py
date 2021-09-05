@@ -67,4 +67,3 @@ def start(): # Starts the program
         print("Their is an input error.Try again!\n")
         return start()
 
-print(start())
