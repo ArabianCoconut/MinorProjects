@@ -1,7 +1,5 @@
 # Chemical Calculator  Made by ArabianCoconut
 from time import sleep
-
-
 def normality():
     print("To prepare normality solution")
     value_1=float(input("Input Molecular Weight:"))
