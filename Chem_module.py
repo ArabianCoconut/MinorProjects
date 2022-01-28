@@ -47,9 +47,20 @@ def converter():  # Converter for Grams to miligrams and vice versa
     else:
         print("Try Again! \n")
         return converter()
+def m1v1(): # This is M1V1=M2V2 formula calculator
+    print("M1V1 = M2V2\n")
+    print("If no value put zero!")
+    m1=float(input("M1 = "))
+    v1=float(input("V1 = "))
+    m2=float(input("M2 = "))
+    v2=float(input("V2 = "))
+    print("The result is =",(m1/v1)*(m2/v2),"\n")
+    sleep(1)
+    return start()
 
 def start(): # Starts the program
-    data=["Version 1.0","Choose options:-", "1) Normality calculator","2) Solution Calculator","3) Gram and miligram converter","4) Select exit or type exit\n"]
+    data=["Version 1.0","Choose options:-", 
+    "1) Normality calculator","2) Solution Calculator","3) Gram and miligram converter","4) M1V1=M2V2 calculator","5) Select exit or type exit\n"]
     for i in data:
         print(i)
     user=input("Select the number to proceed: ")
@@ -59,7 +70,9 @@ def start(): # Starts the program
         solution()
     elif user == "3":
         converter()
-    elif user == "exit".lower() or user=="4":
+    elif user == "4":
+        m1v1()
+    elif user == "exit".lower() or user=="5":
         print("Exiting...")
         sleep(1)
         exit()
