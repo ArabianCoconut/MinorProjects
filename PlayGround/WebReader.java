@@ -7,14 +7,13 @@
 
 import java.io.BufferedReader;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class webreader {
+public class WebReader {
     //read from website and write to a file
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // throw exception if website is not found
         try {
             // create a URL object
@@ -46,8 +45,9 @@ public class webreader {
             bufferedReader.close();
             // close the FileOutputStream object
             fileOutputStream.close();
+            System.out.println("Fetched and written to file successfully!");
         } catch (Exception e) {
-            System.out.println("Website not found");
+            System.out.println("Error: Website not found and did not write to file.");
         }
 
     }
