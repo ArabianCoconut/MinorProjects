@@ -1,4 +1,3 @@
-//Java Document
 /*
  * @author ArabianCoconut
  * @version 1.0
