@@ -16,10 +16,14 @@ public class WebReader {
     public static void main(String[] args) {
         // throw exception if website is not found
         try {
+            // input website url by user
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("Enter website url: ");
+            String url = br.readLine();
             // create a URL object
-            URL url = new URL("https://arabiancoconut.github.io/");
+            URL u = new URL(url);
             // create a URLConnection object
-            URLConnection urlConnection = url.openConnection();
+            URLConnection urlConnection = u.openConnection();
             // create a BufferedReader object
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
             // create a FileOutputStream object
