@@ -35,7 +35,7 @@ public class SQL_Nonsense {
          } catch (IOException e) {
               e.printStackTrace();
          }
-       System.out.println("File Created and Somebody is Nuked!");
+       System.out.println("File Created and Somebody is Salty!");
        
     }
 }
