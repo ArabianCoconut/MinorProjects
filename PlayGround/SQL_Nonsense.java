@@ -6,13 +6,14 @@ package MinorProjects.PlayGround;
  */
 import java.io.*;
 import java.nio.charset.Charset;
-
 public class SQL_Nonsense {
+ 
     public static void main(String[] args) {
         String file= "somebody.py";
         String username="username = 'Somebody_CodeWars'\n";
         String password="password = 'Somebody_CodeWars'\n";
         String sql="print(\"SELECT * FROM users WHERE \" \"username=\"'{}' \" AND password=\"'{}'\"\".format(username, password))";
+        String finalMessage = "File Created and Somebody is Salty!";
        try(FileWriter python = new FileWriter(file, Charset.defaultCharset(), true)){
            python.write(username);
            python.write(password);
@@ -35,7 +36,7 @@ public class SQL_Nonsense {
          } catch (IOException e) {
               e.printStackTrace();
          }
-       System.out.println("File Created and Somebody is Salty!");
+       System.out.println(finalMessage);
        
     }
 }
